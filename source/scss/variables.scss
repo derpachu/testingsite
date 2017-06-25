@@ -22,24 +22,24 @@ $radius-image: 20px;
 $padding-image: 2px 4px;
 
 //text
-$fontfamily-text1: 'Alegreya Sans SC', sans-serif;
-$fontsize-text1: 3vw;
-$mixblend-text1: color-dodge;
-$padding-text1: 0;
-$margin-text1: 0;
+$fontfamily-text: 'Alegreya Sans SC', sans-serif;
+$fontsize-text: 3vw;
+$mixblend-text: color-dodge;
+$padding-text: 0;
+$margin-text: 0;
 
 //namecard
 $height-nameimg: auto;
-$max-width-nameimg: 45px;
+$maxwidth-nameimg: 45px;
 $padding-nameimg: 15px;
 $radius-nameimg: 50%;
 
-$margin-left-namecard: 30px;
+$marginleft-namecard: 30px;
 $boxshadow-namecard: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 $radius-namecard:20px;
 $textalign-namecard: center;
 
-$margin-bottom-namecontent: 8px;
+$marginbottom-namecontent: 8px;
 $padding-namecontent: 0 16px;
 
 //navigation
@@ -48,8 +48,8 @@ $list-style: none;
 $padding-ul: 5px;
 $marginleft-ul: 35px;
 
-$alignment-ul-nav: center;
-$borderbot-ul-nav: 2px solid black;
+$alignmentul-nav: center;
+$borderbotul-nav: 2px solid black;
 
 $borderleft-ula: 6px solid red;
 $borderleft-ulb: 6px solid green;
@@ -58,7 +58,7 @@ $borderleft-uld: 6px solid blue;
 
 $display-lia: inline;
 
-$textalign-lisecond: left-justify;
+$textalign-lisecond: left;
 $liststyle-lisecond: none;
 $fontsize-lisecond: 150%;
 $fontweight-lisecond: bold;
@@ -67,7 +67,7 @@ $fontweight-lisecond: bold;
 $padding-a: 2px 4px;
 $textalign-a: center;
 $textdecoration-a: none;
-$display-alink: inline-block;
+$display-a: inline-block;
 
 $fontweight-alink: bold;
 $fontweight-avisitied: lighter;
@@ -80,9 +80,9 @@ $bgpos-mydiv: center;
 $bgrepeat-mydiv: norepeat;
 $bgsize-mydiv: cover;
 
-$blend-mode-mydiv: multiply;
-$blend-mode-mydiv4: lighten;
-$blend-mode-mydiv5: screen;
+$blendmode-mydiv: multiply;
+$blendmode-mydiv4: lighten;
+$blendmode-mydiv5: screen;
 
 $backgroundsize-mydiv1: 130%;
 $backgroundsize-mydiv2: 110%;
@@ -121,7 +121,7 @@ $justifycontent-fcontain: center;
 $alignitem-fcontain: center;
 
 //flex-item
-$paddingfitem: 5px;
+$padding-fitem: 5px;
 $width-fitem: 100%;
 $height-fitem: auto;
 $margintop-fitem: 10px;
@@ -146,7 +146,7 @@ $textalign-popuptext: center;
 $borderradius-popuptext: 6px;
 $padding-popuptext: 8px 0;
 $position-popuptext: absolute;
-$zidex-popuptext: 1;
+$zindex-popuptext: 1;
 $bottom-popuptext: 125%;
 $left-popuptext: 50%;
 $marginleft-popuptext: -80px;

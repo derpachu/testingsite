@@ -1,6 +1,5 @@
 /* Add your CSS below */
 
-/* Example: adding a background color to the HTML body */
 html {
   background: url("../images/cityscape.jpeg") no-repeat center center fixed;
   background-color: #934b8a;
@@ -175,7 +174,6 @@ a.current:visited {
   background: url("../images/work.jpg") no-repeat center center;
   background-color: #bddb85;
   background-blend-mode: lighten;
-  background-size: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,7 +185,6 @@ a.current:visited {
   background: url("../images/projects.jpg") no-repeat center center;
   background-color: #bddb85;
   background-blend-mode: screen;
-  background-size: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,7 +196,6 @@ a.current:visited {
   background: url("../images/media.jpeg") no-repeat center center;
   background-color: #bddb85;
   background-blend-mode: screen;
-  background-size: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
