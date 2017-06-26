@@ -20,6 +20,8 @@ $lighten-base: luminosity;
 //img
 $radius-image: 20px;
 $padding-image: 2px 4px;
+$width-img: 100%;
+$height-img: auto;
 
 //text
 $fontfamily-text: 'Alegreya Sans SC', sans-serif;
@@ -92,7 +94,7 @@ $backgroundsize-mydivr: 100%;
 $display-wrapper: flex;
 $flexflow-wrapper: column wrap;
 $fontweight-wrapper: bold;
-$textalign-warpper: center;
+$textalign-wrapper: center;
 
 $padding-wrapper: 10px;
 $flex-wrapper: 1 100%;

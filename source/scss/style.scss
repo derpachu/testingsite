@@ -1,9 +1,9 @@
-@import "variables";
+@import "_variables";
 
 html {
   background: url("../images/cityscape.jpeg") no-repeat center center fixed;
   background-color: $purple;
-  background-blend-mode: $lighten;
+  background-blend-mode: lighten;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +34,7 @@ img {
 }
 
 .text3 {
-  color: $blue;
+  color: $darkblue;
   font-family: $fontfamily-text;
   font-size: $fontsize-text;
   mix-blend-mode: $mixblend-text;
@@ -148,7 +148,7 @@ a.current:visited {
 .my-div1 {
   border-radius: $borderradius-mydiv;
   background: url("../images/office.jpg") no-repeat center center;
-  background-color: $whitishgreen;
+  background-color: $pink;
   background-blend-mode: $blendmode-mydiv;
   background-size: $backgroundsize-mydiv1;
 }
@@ -164,8 +164,9 @@ a.current:visited {
 .my-div3 {
   border-radius: $borderradius-mydiv;
   background: url("../images/social media.jpeg") no-repeat center center;
+  background-color: $darkblue;
   background-blend-mode: $blendmode-mydiv;
-  background-size: $backgroundsize-mydiv3;
+  background-size: $backgroundsize-mydiv2;
 }
 
 .my-div4 {
@@ -207,7 +208,7 @@ a.fill-div {
   color: black;
 }
 
-@import "compass/css3";
+//@import "compass/css3";
 
 .wrapper {
   display: -webkit-box;
@@ -217,7 +218,7 @@ a.fill-div {
   display: $display-wrapper;
   -webkit-flex-flow: $flexflow-wrapper;
   flex-flow: $flexflow-wrapper;
-  font-weight: $fontweight-wraper;
+  font-weight: $fontweight-wrapper;
   text-align: $textalign-wrapper;
 }
 
@@ -255,7 +256,7 @@ a.fill-div {
   display: -webkit-flex;
   display: $liststyle-fcontain;
   -webkit-flex-flow: row wrap;
-  justify-content: $fjustifycontent-fcontain;
+  justify-content: $justifycontent-fcontain;
   align-items: $alignitem-fcontain;
 }
 
@@ -265,8 +266,8 @@ a.fill-div {
   height: $height-fitem;
   margin-top: $margintop-fitem;
   text-align: $textalign-fitem;
-  flex-shrink: <1>;
-  flex-grow: <1>;
+  flex-shrink: 1;
+  flex-grow: 1;
   flex-direction: $fdirection-fitem;
 }
 
@@ -275,10 +276,10 @@ a.fill-div {
   width: $width-fitemsub;
   height: $height-fitemsub;
   font-size: $fontsize-fitemsub;
-  margin-top: $margintop-fitemsu;
+  margin-top: $margintop-fitemsub;
   text-align: $textalign-fitemsub;
-  flex-shrink: <1>;
-  flex-grow: <1>;
+  flex-shrink: 1;
+  flex-grow: 1;
   flex-direction: $fdirection;
 }
 
@@ -304,7 +305,7 @@ a.fill-div {
   border-radius: $borderradius-popuptext;
   padding: $padding-popuptext;
   position: $position-popuptext;
-  z-index: $zindex-poputext;
+  z-index: $zindex-popuptext;
   bottom: $bottom-popuptext;
   left: $left-popuptext;
   margin-left: $marginleft-popuptext;
@@ -349,16 +350,90 @@ td {
 }
 
 /* sceen sizing */
-@media (max-width: 320px) {
+@media (max-width: 1200px) and (min-width: 1024px) {
   img {
-    border-radius: 20px;
-    padding: 2px 4px;
-    width: 100%;
-    height: auto;
+    border-radius: $radius-image;
+    padding: $padding-image;
+    width: $width-img;
+    height: $height-img;
   }
 
   .nameimg {
-    padding: 3px;
+    padding: $padding-nameimg / 5;
+  }
+
+  .namecard {
+    margin: auto;
+  }
+
+  .flex-container,
+  .flex-item,
+  .flex-itemsub {
+    display: block;
+    width: auto;
+    float: center;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .footer {
+    background-color: gray;
+    color: white;
+    max-width: auto;
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  img {
+    border-radius: $radius-image;
+    padding: $padding-image;
+    width: $width-img * 2;
+    height: $height-img;
+  }
+
+  .nameimg {
+    padding: $padding-nameimg / 5;
+  }
+
+  .namecard {
+    margin: auto;
+  }
+
+  .flex-container,
+  .flex-item,
+  .flex-itemsub {
+    display: block;
+    width: auto;
+    float: center;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .footer {
+    background-color: gray;
+    color: yellow;
+    max-width: auto;
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  img {
+    border-radius: $radius-image;
+    padding: $padding-image;
+    width: $width-img;
+    height: $height-img;
+  }
+
+  .nameimg {
+    padding: $padding-nameimg / 5;
   }
 
   .namecard {
