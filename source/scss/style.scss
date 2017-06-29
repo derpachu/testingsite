@@ -1,9 +1,9 @@
 @import "_variables";
 
 html {
-  background: url("../images/cityscape.jpeg") no-repeat center center fixed;
+  background: url("../../images/cityscape.jpeg") no-repeat center center fixed;
   background-color: $purple;
-  background-blend-mode: lighten;
+  background-blend-mode: $lighten-base;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,7 +16,8 @@ img {
 }
 
 .text1 {
-  color: $pink;
+  color: white;
+  text-shadow: $textshadow-text;
   font-family: $fontfamily-text;
   font-size: $fontsize-text;
   mix-blend-mode: $mixblend-text;
@@ -25,7 +26,8 @@ img {
 }
 
 .text2 {
-  color: $yellow;
+  color: white;
+  text-shadow: $textshadow-text;
   font-family: $fontfamily-text;
   font-size: $fontsize-text;
   mix-blend-mode: $mixblend-text;
@@ -34,7 +36,8 @@ img {
 }
 
 .text3 {
-  color: $darkblue;
+  color: white;
+  text-shadow: $textshadow-text;
   font-family: $fontfamily-text;
   font-size: $fontsize-text;
   mix-blend-mode: $mixblend-text;
@@ -50,6 +53,7 @@ img {
 }
 
 .namecard {
+  background-color: $yellow;
   margin-left: $marginleft-namecard;
   box-shadow: $boxshadow-namecard;
   border-radius: $radius-namecard;
@@ -58,7 +62,7 @@ img {
 
 .namecontent {
   margin-bottom: $marginbottom-namecontent;
-  padding: padding-namecontent;
+  padding: $padding-namecontent;
 }
 
 .ul.navigation {
@@ -114,7 +118,7 @@ li.second {
 a:link {
   color: $blue;
   padding: $padding-a;
-  text-align: textalign-a;
+  text-align: $textalign-a;
   text-decoration: $textdecoration-a;
   display: $display-a;
   font-weight: $fontweight-alink;
@@ -147,7 +151,7 @@ a.current:visited {
 
 .my-div1 {
   border-radius: $borderradius-mydiv;
-  background: url("../images/office.jpg") no-repeat center center;
+  background: url("../../images/office.jpg") no-repeat center center;
   background-color: $pink;
   background-blend-mode: $blendmode-mydiv;
   background-size: $backgroundsize-mydiv1;
@@ -155,15 +159,15 @@ a.current:visited {
 
 .my-div2 {
   border-radius: $borderradius-mydiv;
-  background: url("../images/laptop.jpg") no-repeat center center;
-  background-color: $darkblue;
+  background: url("../../images/laptop.jpg") no-repeat center center;
+  background-color: $blue;
   background-blend-mode: $blendmode-mydiv;
   background-size: $backgroundsize-mydiv2;
 }
 
 .my-div3 {
   border-radius: $borderradius-mydiv;
-  background: url("../images/social media.jpeg") no-repeat center center;
+  background: url("../../images/social media.jpeg") no-repeat center center;
   background-color: $darkblue;
   background-blend-mode: $blendmode-mydiv;
   background-size: $backgroundsize-mydiv2;
@@ -171,7 +175,7 @@ a.current:visited {
 
 .my-div4 {
   border-radius: $borderradius-mydiv;
-  background: url("../images/work.jpg") no-repeat center center;
+  background: url("../../images/work.jpg") no-repeat center center;
   background-color: $whitishgreen;
   background-blend-mode: $blendmode-mydiv4;
   background-attachment: $bgattach-mydiv;
@@ -182,7 +186,7 @@ a.current:visited {
 
 .my-div5 {
   border-radius: $borderradius-mydiv;
-  background: url("../images/projects.jpg") no-repeat center center;
+  background: url("../../images/projects.jpg") no-repeat center center;
   background-color: $purple;
   background-blend-mode: $blendmode-mydiv5;
   background-attachment: $bgattach-mydiv;
@@ -193,7 +197,7 @@ a.current:visited {
 
 .my-div6 {
   border-radius: $borderradius-mydiv;
-  background: url("../images/media.jpeg") no-repeat center center;
+  background: url("../../images/media.jpeg") no-repeat center center;
   background-color: $purple;
   background-blend-mode: $blendmode-mydiv5;
   background-attachment: $bgattach-mydiv;
@@ -233,7 +237,7 @@ a.fill-div {
 }
 
 .footer {
-  background-image: url("../images/footer.jpeg");
+  background-image: url("../../images/footer.jpeg");
   border-radius: $borderradius-footer;
   background-size: $backgroundsize-footer;
   margin: $margin-footer;
@@ -295,8 +299,7 @@ a.fill-div {
   user-select: none;
 }
 
-.popup,
-.popuptext {
+.popup .popuptext {
   visibility: hidden;
   width: $width-popuptext;
   background-color: #555;
@@ -311,8 +314,7 @@ a.fill-div {
   margin-left: $marginleft-popuptext;
 }
 
-.popup,
-.popuptext::after {
+.popup .popuptext::after {
   content: "";
   position: $position-popuptexta;
   top: $top-popuptexta;
@@ -323,8 +325,7 @@ a.fill-div {
   border-color: $bordercolor-popuptexta;
 }
 
-.popup,
-.show {
+.popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
@@ -391,7 +392,7 @@ td {
   img {
     border-radius: $radius-image;
     padding: $padding-image;
-    width: $width-img * 2;
+    width: $width-img * 0.7;
     height: $height-img;
   }
 
@@ -399,14 +400,10 @@ td {
     padding: $padding-nameimg / 5;
   }
 
-  .namecard {
-    margin: auto;
-  }
-
   .flex-container,
   .flex-item,
   .flex-itemsub {
-    display: block;
+    display: flex;
     width: auto;
     float: center;
   }
@@ -437,15 +434,15 @@ td {
   }
 
   .namecard {
-    margin: auto;
+    margin: auto / 2;
   }
 
   .flex-container,
   .flex-item,
   .flex-itemsub {
     display: block;
-    width: auto;
-    float: center;
+    width: auto / 3;
+    float: right;
   }
 
   .col {
