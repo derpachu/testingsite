@@ -58,6 +58,7 @@ img {
   box-shadow: $boxshadow-namecard;
   border-radius: $radius-namecard;
   text-align: $textalign-namecard;
+  max-width: $maxwidth-namecard;
 }
 
 .namecontent {
@@ -368,7 +369,6 @@ td {
   .flex-itemsub {
     display: block;
     width: auto;
-    float: center;
   }
 
   .col {
@@ -397,7 +397,7 @@ td {
   }
 
   .namecard {
-    margin-left: auto / 2;
+    margin-left: 0;
   }
 
   .flex-container,
@@ -405,7 +405,6 @@ td {
   .flex-itemsub {
     display: flex;
     width: auto;
-    float: center;
   }
 
   .col {
@@ -445,14 +444,14 @@ td {
   .namecard {
     margin-left: 0;
     max-height: 80px;
+    max-width: 100%;
   }
 
   .flex-container,
   .flex-item,
   .flex-itemsub {
     display: block;
-    width: auto / 3;
-    float: right;
+    width: auto;
   }
 
   .text1 {
