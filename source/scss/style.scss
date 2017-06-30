@@ -363,10 +363,6 @@ td {
     padding: $padding-nameimg / 5;
   }
 
-  .namecard {
-    margin: auto;
-  }
-
   .flex-container,
   .flex-item,
   .flex-itemsub {
@@ -400,6 +396,10 @@ td {
     padding: $padding-nameimg / 5;
   }
 
+  .namecard {
+    margin-left: auto / 2;
+  }
+
   .flex-container,
   .flex-item,
   .flex-itemsub {
@@ -422,19 +422,29 @@ td {
 }
 
 @media (max-width: 767px) {
+  h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+  }
+
   img {
     border-radius: $radius-image;
-    padding: $padding-image;
+    padding: 0;
     width: $width-img;
     height: $height-img;
   }
 
   .nameimg {
     padding: $padding-nameimg / 5;
+    max-width: $maxwidth-nameimg / 2;
+    margin: 0;
   }
 
   .namecard {
-    margin: auto / 2;
+    margin-left: 0;
+    max-height: 80px;
   }
 
   .flex-container,
@@ -443,6 +453,18 @@ td {
     display: block;
     width: auto / 3;
     float: right;
+  }
+
+  .text1 {
+    font-size: $fontsize-text * 3;
+  }
+
+  .text2 {
+    font-size: $fontsize-text * 3;
+  }
+
+  .text3 {
+    font-size: $fontsize-text * 3;
   }
 
   .col {
